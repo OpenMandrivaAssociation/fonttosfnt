@@ -1,6 +1,6 @@
 Name:		fonttosfnt
 Version:	1.0.3
-Release:	%mkrel 2
+Release:	%mkrel 3
 Summary:	Wrap a bitmap font in a sfnt (TrueType) wrapper
 Group:		System/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
