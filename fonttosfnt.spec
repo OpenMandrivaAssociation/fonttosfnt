@@ -10,6 +10,7 @@ BuildRequires:	libfontenc-devel >= 1.0.1
 BuildRequires:	freetype-devel >= 2.1.10
 BuildRequires:	x11-proto-devel >= 1.0.0
 BuildRequires:	x11-util-macros >= 1.0.1
+BuildRequires:	bzip2-devel
 Patch0:		aarch64.patch
 Patch1:		fonttosfnt-1.0.4-bzip2-linkage.patch
 
