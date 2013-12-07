@@ -1,7 +1,7 @@
 Summary:	Wrap a bitmap font in a sfnt (TrueType) wrapper
 Name:		fonttosfnt
 Version:	1.0.4
-Release:	10
+Release:	11
 Group:		System/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org/releases/individual/app
