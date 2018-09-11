@@ -1,26 +1,24 @@
-diff --git a/Makefile.am b/Makefile.am
-index 3fe03df..a0735f1 100644
---- a/Makefile.am
-+++ b/Makefile.am
-@@ -22,7 +22,7 @@
+diff -up fonttosfnt-1.0.5/Makefile.am.1~ fonttosfnt-1.0.5/Makefile.am
+--- fonttosfnt-1.0.5/Makefile.am.1~	2018-09-11 17:06:29.100061153 +0200
++++ fonttosfnt-1.0.5/Makefile.am	2018-09-11 17:07:11.857592819 +0200
+@@ -23,7 +23,7 @@ SUBDIRS = man
  bin_PROGRAMS = fonttosfnt
  
- AM_CFLAGS = -DXVENDORNAME=\"X.Org\ Foundation\" $(FONTTOSFNT_CFLAGS) -DXVENDORNAMESHORT=\"X.Org\" -D_BSD_SOURCE
+ AM_CFLAGS = -DXVENDORNAME=\"X.Org\ Foundation\" $(FONTTOSFNT_CFLAGS) -DXVENDORNAMESHORT=\"X.Org\" -D_DEFAULT_SOURCE -D_GNU_SOURCE $(CWARNFLAGS)
 -fonttosfnt_LDADD = $(FONTTOSFNT_LIBS) -lm
 +fonttosfnt_LDADD = $(FONTTOSFNT_LIBS) -lm -lbz2
  
  fonttosfnt_SOURCES =	\
          fonttosfnt.c \
-diff --git a/Makefile.in b/Makefile.in
-index 6d6c340..4d5a4d4 100644
---- a/Makefile.in
-+++ b/Makefile.in
-@@ -223,7 +223,7 @@ top_builddir = @top_builddir@
- top_srcdir = @top_srcdir@
+diff -up fonttosfnt-1.0.5/Makefile.in.1~ fonttosfnt-1.0.5/Makefile.in
+--- fonttosfnt-1.0.5/Makefile.in.1~	2018-09-11 17:06:29.100061153 +0200
++++ fonttosfnt-1.0.5/Makefile.in	2018-09-11 17:07:20.228501098 +0200
+@@ -378,7 +378,7 @@ SUBDIRS = man
  AM_CFLAGS = -DXVENDORNAME=\"X.Org\ Foundation\" $(FONTTOSFNT_CFLAGS) \
- 	-DXVENDORNAMESHORT=\"X.Org\" -D_BSD_SOURCE $(am__append_2)
+ 	-DXVENDORNAMESHORT=\"X.Org\" -D_DEFAULT_SOURCE -D_GNU_SOURCE \
+ 	$(CWARNFLAGS) $(am__append_2)
 -fonttosfnt_LDADD = $(FONTTOSFNT_LIBS) -lm
 +fonttosfnt_LDADD = $(FONTTOSFNT_LIBS) -lm -lbz2
  fonttosfnt_SOURCES = fonttosfnt.c fonttosfnt.h read.c struct.c util.c \
  	write.c $(am__append_1)
- appman_PRE = \
+ MAINTAINERCLEANFILES = ChangeLog INSTALL
