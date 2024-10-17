@@ -4,7 +4,7 @@ Version:	1.2.3
 Release:	1
 Group:		System/X11
 License:	MIT
-Url:		http://xorg.freedesktop.org/releases/individual/app
+Url:		https://xorg.freedesktop.org/releases/individual/app
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 Patch1:		fonttosfnt-1.0.4-bzip2-linkage.patch
 
