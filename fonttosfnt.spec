@@ -8,6 +8,11 @@ Url:		https://xorg.freedesktop.org/releases/individual/app
 Source0:	https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 Patch1:		fonttosfnt-1.0.4-bzip2-linkage.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(bzip2)
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(fontenc)
